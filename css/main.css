@@ -7,6 +7,7 @@ html {
 }
 .wrapper {
     margin: auto;
+    padding: 0 70px;
 }
 .beer {
     float: left;
@@ -53,4 +54,27 @@ html {
 }
 .add-to-cart p {
     margin: 8px 0;
+}
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 0 15px
+    }
+    .beer {
+        width: 100%
+    }
+    .beer img {
+        display: inline-block;
+        float: left;
+    }
+    .name, .price, .description, .add-to-cart {
+        float: left;
+        margin: 0 20px;
+    }
+    .description {
+        text-align: left;
+        max-width: 30%;
+    }
+}
+@media (max-width: 480px) {
+
 }
