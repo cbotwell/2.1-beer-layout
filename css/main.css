@@ -76,5 +76,20 @@ html {
     }
 }
 @media (max-width: 480px) {
-
+    .wrapper {
+        padding: 5px;
+    }
+    .beer img {
+        float: none;
+        display: block;
+    }
+    .name, .price, .description, .add-to-cart {
+        float: none;
+        margin: 10px auto;
+        text-align: center;
+        max-width: 100%
+    }
+    .add-to-cart {
+        margin-top: 20px;
+    }
 }
