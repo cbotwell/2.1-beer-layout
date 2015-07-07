@@ -1,6 +1,56 @@
 html {
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+.wrapper {
+    margin: auto;
+}
+.beer {
+    float: left;
+    width: 33%;
+    padding: 3%;
+}
+.beer img {
+    display: block;
+    max-height: 200px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+.name, .price, .description, .add-to-cart {
+    text-align: center;
+}
+.name, .price, .description {
+    margin: 10px 0;
+}
+.name, .description {
+    color: #1B76FF;
+}
+.name {
+    font-weight: bold;
+    font-size: 2em;
+}
+.price {
+    color: #A6A6A6;
+    font-size: 1.5em;
+}
+.add-to-cart {
+    color: white;
+    background: #1B76FF;
+    border-radius: 3px;
+    width: 130px;
+    padding: 1px;
+    margin: auto;
+    margin-top: 40px;
+}
+.add-to-cart:hover {
+    background: #15A9FA;
+}
+.add-to-cart:active {
+    background: #2C1DFF;
+}
+.add-to-cart p {
+    margin: 8px 0;
 }
