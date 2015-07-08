@@ -57,13 +57,20 @@ html {
 }
 @media (max-width: 1024px) {
     .wrapper {
-        padding: 0 15px
+        padding: 0 15px;
     }
     .beer {
         width: 100%;
+        position: relative;
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 130px;
+        transform: translateY(-50%);
     }
     .beer img, .name, .price, .description, .add-to-cart {
-        vertical-align: middle;
+        display: inline-block;
     }
     .beer img {
         float: left;
@@ -85,10 +92,22 @@ html {
         float: none;
         display: block;
     }
+    .beer, .center {
+        position: static;
+    }
+    .center {
+        transform: none;
+    }
     .name, .price, .description, .add-to-cart {
+        display: block;
         float: none;
         margin: 10px auto;
         text-align: center;
+    }
+    .name, .price {
+        width: 100%;
+    }
+    .description {
         max-width: 100%;
     }
     .add-to-cart {
