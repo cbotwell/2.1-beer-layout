@@ -75,13 +75,16 @@ html {
     .beer img {
         float: left;
     }
+    .name, .price, .description {
+        font-size: 1em;
+    }
     .name, .price, .description, .add-to-cart {
         float: left;
         margin: 0 20px;
     }
     .description {
         text-align: left;
-        max-width: 30%;
+        max-width: 20%;
     }
 }
 @media (max-width: 480px) {
