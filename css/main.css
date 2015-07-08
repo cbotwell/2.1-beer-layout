@@ -80,11 +80,11 @@ html {
     }
     .name, .price, .description, .add-to-cart {
         float: left;
-        margin: 0 20px;
+        margin: 0 15px;
     }
     .description {
         text-align: left;
-        max-width: 20%;
+        max-width: 30%;
     }
 }
 @media (max-width: 480px) {
