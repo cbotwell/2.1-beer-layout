@@ -1,6 +1,119 @@
 html {
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+.wrapper {
+    margin: auto;
+    padding: 0 70px;
+}
+.beer {
+    float: left;
+    width: 33%;
+    padding: 3%;
+}
+.beer img {
+    display: block;
+    max-height: 200px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+.name, .price, .description, .add-to-cart {
+    text-align: center;
+}
+.name, .price, .description {
+    margin: 10px 0;
+}
+.name, .description {
+    color: #1B76FF;
+}
+.name {
+    font-weight: bold;
+    font-size: 2em;
+}
+.price {
+    color: #A6A6A6;
+    font-size: 1.5em;
+}
+.add-to-cart {
+    color: white;
+    background: #1B76FF;
+    border-radius: 3px;
+    width: 130px;
+    padding: 1px;
+    margin: auto;
+    margin-top: 40px;
+}
+.add-to-cart:hover {
+    background: #15A9FA;
+}
+.add-to-cart:active {
+    background: #2C1DFF;
+}
+.add-to-cart p {
+    margin: 8px 0;
+}
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 0 15px;
+    }
+    .beer {
+        width: 100%;
+        position: relative;
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 130px;
+        transform: translateY(-50%);
+    }
+    .beer img, .name, .price, .description, .add-to-cart {
+        display: inline-block;
+    }
+    .beer img {
+        float: left;
+    }
+    .name, .price, .description {
+        font-size: 1em;
+    }
+    .name, .price, .description, .add-to-cart {
+        float: left;
+        margin: 0 15px;
+    }
+    .description {
+        text-align: left;
+        max-width: 30%;
+    }
+}
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 5px;
+    }
+    .beer img {
+        float: none;
+        display: block;
+    }
+    .beer, .center {
+        position: static;
+    }
+    .center {
+        transform: none;
+    }
+    .name, .price, .description, .add-to-cart {
+        display: block;
+        float: none;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .name, .price {
+        width: 100%;
+    }
+    .description {
+        max-width: 100%;
+    }
+    .add-to-cart {
+        margin-top: 20px;
+    }
 }
